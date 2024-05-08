@@ -1,0 +1,56 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+coverage
+
+# Playwright
+test/playwright/report
+test/playwright/results
+test/playwright/.cache
+test-results
+playwright-report
+playwright/.cache
+
+# Turbo
+.turbo
+
+# Build Outputs
+.next/
+out/
+build
+dist
+.rollup.cache
+tsconfig.tsbuildinfo
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+.DS_Store
+*.pem
+
+# Oberon
+.oberon
+
+# Genereated tailwind classes
+tailwind.classes.txt
+
+# vite doesn't know how to clean up after itself
+vite.config.*.timestamp-*
+
+# Vercel adds this if it's not last
+.vercel
