@@ -1,5 +1,8 @@
 {
-  "extends": "./tsconfig-base.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "buildOnSave": false,
+  "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "./src",
@@ -12,7 +15,28 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "lib": ["es2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationMap": true,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2022",
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
   "include": ["src", "next-env.d.ts"],
   "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.spec.tsx"]

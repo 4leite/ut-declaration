@@ -18,7 +18,7 @@ function dts(): VitePlugin {
       if (!error) {
         return new Promise((resolve, _reject) => {
           exec(
-            "tsc --noEmit false --emitDeclarationOnly true --declaration true --declarationMap true --pretty",
+            "tsc  --pretty",
             (_error, stdout, stderr) => {
               if (stdout) {
                 console.log(stdout)
